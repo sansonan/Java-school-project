@@ -17,6 +17,9 @@ public class PermissionServiceImpl implements PermissionService {
     private PermissionRepository permissionRepository;
     @Override
     public Permission createPermission(Permission permission) {
+        if (permission.getId() != null) {
+            throw new IllegalArgumentException("ID must be null for a new permission");
+        }
         return permissionRepository.save(permission);
     }
 

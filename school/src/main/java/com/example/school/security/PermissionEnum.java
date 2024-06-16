@@ -12,8 +12,9 @@ public enum PermissionEnum {
     USER_WRITE("user:write"),
     USER_READ("user:read"),
     COURSE_WRITE("course:write"),
-    COURSE_READ("course:read");
-
+    COURSE_READ("course:read"),
+    PROMOTION_WRITE("promotion:write"),
+    PROMOTION_READ("promotion:read");
     private String description;
 
 }

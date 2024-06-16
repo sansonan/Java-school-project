@@ -1,18 +1,13 @@
 package com.example.school.controller;
 
-import com.example.school.dto.CourseDTO;
 import com.example.school.dto.PromotionDTO;
 import com.example.school.entity.Course;
 import com.example.school.entity.Promotion;
-import com.example.school.entity.User;
-import com.example.school.exception.ResourceNotFoundException;
 import com.example.school.service.CourseService;
 import com.example.school.service.PromotionService;
 import com.example.school.service.UserService;
-import com.example.school.service.util.CourseMapper;
 import com.example.school.service.util.PromotionMapper;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
